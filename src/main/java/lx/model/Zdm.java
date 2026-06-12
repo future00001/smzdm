@@ -65,10 +65,10 @@ public class Zdm implements Crawlable {
     public String toHtmlTr() {
         return "<tr>" +
                 "<td style='padding:0;line-height:0;font-size:0'><img src='" + picUrl + "' width='192' height='128'/></td>" +
-                "<td><a target='_blank' href='" + url + "'>" + title + "</a></td>" +
-                "<td>" + price + "</td>" +
-                "<td>" + voted + "/" + comments + "</td>" +
-                "<td>" + articleMall + "</td>" +
+                "<td style='font-size:1.5em'><a target='_blank' href='" + url + "'>" + title + "</a></td>" +
+                "<td style='font-size:1.2em'>" + price + "</td>" +
+                "<td style='font-size:1.2em'>" + voted + "/" + comments + "</td>" +
+                "<td style='font-size:1.2em'>" + articleMall + "</td>" +
                 "</tr>";
     }
 
