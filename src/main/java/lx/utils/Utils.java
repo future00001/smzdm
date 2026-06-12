@@ -24,8 +24,9 @@ public class Utils {
 
     public static String buildMessage(List<? extends Crawlable> list) {
         StringBuilder s = new StringBuilder();
-        s.append("<table border='1'>");
-        s.append("<tr><th width='20%'>图</th><th width='45%'>标题</th><th width='15%'>价格</th><th width='10%'>赞/评</th><th width='10%'>平台</th></tr>");
+        s.append("<table border='1' cellpadding='4' cellspacing='0' style='table-layout:fixed;width:640px;word-wrap:break-word;'>");
+        s.append("<colgroup><col style='width:30%'/><col style='width:40%'/><col style='width:15%'/><col style='width:5%'/><col style='width:10%'/></colgroup>");
+        s.append("<tr><th>图</th><th>标题</th><th>价格</th><th>赞/评</th><th>平台</th></tr>");
         list.forEach(z -> s.append(z.toHtmlTr()));
         s.append("</table>");
         return s.toString();
